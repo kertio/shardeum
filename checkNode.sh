@@ -22,7 +22,6 @@ do
      "null")
         echo "---------------------------------------" 
         echo `date` "Node unknown state."
-        echo `date` "Start node."
         docker exec -ti shardeum-dashboard operator-cli stop
         docker exec -ti shardeum-dashboard operator-cli start
         echo "==>" `date` "Node restarted."
